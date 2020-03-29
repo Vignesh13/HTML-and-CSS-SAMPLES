@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            First
+        </title>
+        <link rel="stylesheet" href="FirstCSS.css">
+        <style>
+            body{background-color: black;}
+            p{color: chartreuse;font-size: 25pt;}
+        </style>
+        <script src="First.js"></script>
+        <script >
+            function Addition(){
+                alert("in js function");
+                alert(document.getElementById("t1").value);
+            var v1=parseInt(document.getElementById("t1").value);
+            var v2=parseInt(document.getElementById("t2").value);
+            var v3=v1+v2;
+            Display(v3)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="color: crimson; text-align: center;">This is my first sample program.</h1>
+        <p id="internal">The style for this line is given by Internal Style sheet</p>
+        <p id="external">The external style sheet is used</p>
+        <p id="jsscript">This is for JS </p>
+        <input type="text" name="t1" id="t1" value="10">
+        <input type="text" name="t2" id="t2" value="15"><br>
+        <input type="button" name="b1" value="Add" size="100" onclick="Addition()">
+    </body>
+</html>
